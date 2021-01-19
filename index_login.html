@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>Главная</title>
+  <title>Главная - авторизованный пользователь</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -51,15 +51,16 @@
           </div>
           <div class="header__notif">
             <a class="notif__link" href="#!">Уведомления</a>
+            <span class="notif__counter">1</span>
           </div>
-          <div class="header__user-nav">
-            <div class="header__user-no-login">
-              <div class="user__nav-sign-in">
-                <a href="#!">Вход</a>
-              </div>
-              <div class="user__nav-register">
-                <a href="#!">Регистрация</a>
-              </div>
+          <div class="header__user-login">
+            <div class="header__user-name">
+              <a href="#!">@KingdomKids</a>
+            </div>
+            <div class="header__user-avatar">
+              <a href="#!">
+                <img src="images/user-avatar.png" alt="">
+              </a>
             </div>
           </div>
           <div class="mobile__hamburger">
@@ -107,16 +108,16 @@
               <span></span>
             </button>
           </div>
-       
-        
-         
+
+
+
           <div class="product__search">
             <form class="search-form" action="#!">
               <input class="search-input product__search-input" type="text" placeholder="Поиск по ключевым словам">
               <button class="search-button product__search-button">Искать</button>
             </form>
           </div>
-        
+
           <div class="product__list-mobile-buttons">
             <div class="mobile__filter-buttons">
               <button class="mobile__category-open">
@@ -152,7 +153,7 @@
                       <img src="images/content/product-img-1.jpg"
                         alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                     </a>
-                    <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
+                    <div class="product__item-wishlist product__item-icon" title="Добавить в избранное">
                       <a href="#!">
                         <svg>
                           <use href="#heart"></use>
@@ -754,10 +755,10 @@
                 Вы отметили:
               </h2>
               <div class="rightside__link">
-                <a href="#!">Подписки</a>
+                <a href="#!">Подписки <span class="subs__counter">24</span></a>
               </div>
               <div class="rightside__link">
-                <a href="#!">Избранное</a>
+                <a href="#!">Избранное <span class="wish__counter">13</span></a>
               </div>
             </div>
           </div>
@@ -895,30 +896,12 @@
   <!-- footer -->
 
 
-
-  <!-- popup start -->
-     <div class="popup popup-sign-in">
-      <div class="popup__wrapper">
-        <div class="popup__inner">
-          <div class="popup__content popup-sing-in__content">
-            <button class="mobile__close-icon popup__close">
-              <span></span>
-              <span></span>
-            </button>
-            <div class="popup-sign-in__title">
-              Необходимо войти на сайт
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- popup end -->
-
-
-
   <!-- scroll-top-icon -->
   <button class="scroll-top"></button>
   <!-- scroll-top-icon -->
+
+
+
 
   <!-- sprite svg -->
   <svg display="none" xmlns="http://www.w3.org/2000/svg">

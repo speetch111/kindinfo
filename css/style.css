@@ -46,6 +46,12 @@
 
 /* Общие стили */
 
+*,
+*::after,
+*::before {
+  -webkit-tap-highlight-color: transparent;
+}
+
 :root {
   --green: #86cf4b;
   --green-bg: #54D03B;
@@ -60,6 +66,10 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #F0F0F0;
+}
+
+body.oh {
+  overflow: hidden;
 }
 
 .main {
@@ -209,7 +219,39 @@ body {
 /* Соц сети */
 
 
+.mobile__close-icon {
+  position: absolute;
+  right: 15px;
+  top: 19px;
+  width: 30px;
+  height: 30px;
+  outline: none;
+} 
 
+.mobile__close-icon span {
+  width: 100%;
+  background-color: var(--green-bg);
+  display: block;
+  width: 20px;
+  height: 3px;
+  border-radius: 1px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
+.mobile__close-icon span:nth-child(1) {
+  transform: translate(-10px,-1px) rotate(45deg);
+}
+
+.mobile__close-icon span:nth-child(2) {
+  transform: translate(-10px,-1px) rotate(-45deg);
+}
 
 /* header styles start */
 
@@ -220,6 +262,15 @@ body {
 .mobile__hamburger {
   display: none;
 }
+
+.close-hamburger,
+.close-filter,
+.close-category,
+.mobile__current-category {
+  display: none;
+}
+
+
 
 .header {
 
@@ -283,6 +334,7 @@ body {
 .navgiation__list li a {
   font-weight: bold;
   transition: .3s;
+  width: 100%;
 }
 
 .navgiation__list li.active a,
@@ -347,7 +399,34 @@ body {
 }
 
 .header__user-login {
-  display: none;
+  display: flex;
+  align-items: center;
+}
+
+.header__user-avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.header__user-avatar img {
+  border-radius: 50%;
+}
+
+.header__user-name {
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 150px;
+  height: 26px;
+  text-align: right;
+}
+
+.header__user-name a {
+  color: var(--green-bg); 
+  font-weight: 600;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .header__user-no-login {
@@ -469,11 +548,16 @@ body {
   stroke: #EB2A5B;
   stroke-width: 2px;
   fill: none;
+  transition: .3s;
 }
 
 .product__item-wishlist.active svg {
   fill: #EB2A5B;
 } 
+
+.product__item-wishlist:hover svg {
+  fill: #EB2A5B;
+}
 
 .product__item-share svg {
   width: 15px;
@@ -650,8 +734,7 @@ body {
 
 
 
-.rightside__rubric {
-}
+
 .rightside__title {
   font-family: 'Raleway';
   font-weight: 800;
@@ -668,12 +751,19 @@ body {
   padding: 9px 5px;
   background-color: #fff;
   transition: .3s;
+  position: relative;
 }
 
 .rightside__link a:hover {
   background-color: var(--green-bg);
   color: #fff;
 }
+
+.rightside__rubric .rightside__link.active a {
+  background-color: var(--green-bg);
+  color: #fff;
+}
+
 
 .rightside__link:not(:last-of-type) {
   margin-bottom: 10px;
@@ -812,8 +902,35 @@ body {
 }
 
 
-.subs__counter {
+
+
+.subs__counter,
+.wish__counter {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  background-color: var(--green-bg);
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: .3s;
 }
+
+.rightside__link a:hover .subs__counter,
+.rightside__link a:hover .wish__counter {
+  background-color: #fff;
+  color: var(--green-bg);
+}
+
+
+
 .wish__counter {
 }
 .rightside__advertising {
@@ -904,3 +1021,57 @@ body {
 }
 
 /* footer styles end */
+
+
+
+.popup {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.8);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: none;
+}
+.popup__wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.popup__inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 50px 0;
+}
+.popup__content {
+  background: #fff;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  position: relative;
+}
+
+.popup-sign-in .popup__content {
+  max-width: 400px;
+  padding: 30px;
+}
+
+.popup__close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+}
+
+.popup__close span {
+  pointer-events: none;
+}
+
+.popup-sign-in__title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600px;
+}
