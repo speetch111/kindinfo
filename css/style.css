@@ -409,7 +409,7 @@ body.oh {
 .header__user-login {
   display: flex;
   align-items: center;
-  margin-left: 93.5px;
+  margin-left: 273.5px;
 }
 
 .header__user-avatar {
@@ -1107,4 +1107,62 @@ body.oh {
   font-size: 20px;
   line-height: 26px;
   font-weight: 600px;
+}
+
+
+.register__wrapper {
+}
+.tabs__links {
+  display: flex;
+}
+
+.tabs__links li a {
+  text-align: center;
+  padding: 9px 25px;
+  background-color:#FEFEFE;
+  transition: .3s;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.tabs__links li.active a {
+  color: #fff;
+  background-color: var(--green-bg);
+} 
+
+.tabs__links li a:first-of-type {
+  border-radius: 4px 0 0 0;
+}
+.tabs__links li a:last-of-type {
+  border-radius: 0 4px 0 0;
+}
+
+.register-tabs__content > div {
+  padding: 30px;
+  background-color: #fff;
+}
+.tabs__content {
+}
+.sign-in__box {
+}
+.form-field__wrap {
+}
+.sign__in-row {
+}
+.check__item {
+}
+.sign__in-row-item {
+}
+.check__label {
+}
+.check__input {
+}
+.check__box {
+}
+.forgott__pass {
+}
+.g-recaptcha {
+}
+.register__box {
 }
