@@ -409,7 +409,7 @@ body.oh {
 .header__user-login {
   display: flex;
   align-items: center;
-  margin-left: 90.5px;
+  margin-left: 43.5px;
 }
 
 .header__user-avatar {
@@ -423,7 +423,7 @@ body.oh {
 
 .header__user-name {
   margin-right: 30px;
-  width: 153px;
+  width: 198px;
   height: 26px;
   text-align: right;
 }
