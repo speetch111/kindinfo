@@ -133,6 +133,19 @@ $(function () {
     });
   }
 
+  // $('.tabs__content > div').hide();
+
+  // $('.tabs__links a').click(function () {
+  //   if ($(this).parent().hasClass('active')) return;
+  //   $(this).parent().addClass('active').siblings().removeClass('active');
+  //   target = $(this).attr('href');
+  //   $(target).show().siblings().hide();
+
+  //   return false;
+  // });
+
+  // $('.tabs__links li:first-child a').click();
+
 });
 
 
