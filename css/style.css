@@ -1114,14 +1114,36 @@ input {
   padding: 30px;
 }
 
+.popup-forgot-pass .popup__content {
+  max-width: 400px;
+  padding: 30px;
+}
+
 .popup__close {
   position: absolute;
   top: -40px;
   right: -40px;
+  width: 30px;
+  height: 30px;
 }
 
 .popup__close span {
   pointer-events: none;
+  display: none;
+}
+
+.popup__close::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url(../images/close-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .popup-sign-in__title {
@@ -1181,6 +1203,7 @@ input {
 .field__criterion {
   color:  #929292;
   font-size: 15px;
+  line-height: 18px;
 }
 
 
@@ -1195,8 +1218,7 @@ input {
   margin-bottom: 0;
 }
 
-.autorized__content-sign-in,
-.autorized__content-fg-pass {
+.autorized__content-sign-in {
   max-width: 360px;
 }
 

@@ -324,7 +324,7 @@
 
 
 @media (max-width: 850px) {
-  .autorized__content-sign-in, .autorized__content-fg-pass {
+  .autorized__content-sign-in {
     max-width: none;
   }
   .register-row {
@@ -481,22 +481,15 @@
 }
 
 @media (max-width: 560px) {
-  .autorized__links {
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-  }
+
 
   .autorized__links li {
     width: 50%;
   }
 
-  .autorized__links li:last-of-type {
-    width: 100%;
-  }
-
   .autorized__links li a {
     width: 100%;
-    }
+  }
 
   .header__user-nav {
     margin-right: auto;
@@ -524,11 +517,14 @@
   width: 30px;
   height: 30px;
 }
-.popup-sign-in .popup__content {
+.popup-sign-in .popup__content,
+.popup-forgot-pass .popup__content {
   width: 90%;
   max-width: none;
-  padding: 10px;
+  padding: 15px;
 }
+
+
 
 .popup-sign-in__title {
   font-size: 16px;

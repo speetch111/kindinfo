@@ -87,9 +87,6 @@
               <li>
                 <a href="register.html">Регистрация</a>
               </li>
-              <li>
-                <a href="forgott-password.html">Забыли пароль</a>
-              </li>
             </ul>
           </div>
           <div class="autorized__content-wrap">
@@ -110,7 +107,7 @@
                     </label>
                   </div>
                   <div class="sign-in-row__item forgott__pass">
-                    <a href="#!">
+                    <a href="#!" class="open-popup" data-popup="popup-forgot-pass">
                       Забыли пароль?
                     </a>
                   </div>
@@ -277,6 +274,34 @@
             <div class="popup-sign-in__title">
               Необходимо войти на сайт
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- popup end -->
+
+  <!-- popup start -->
+     <div class="popup popup-forgot-pass">
+      <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content popup-sing-in__content">
+            <button class="mobile__close-icon popup__close">
+              <span></span>
+              <span></span>
+            </button>
+            <div class="autorized__content-fg-pass">
+              <form action="#!">
+                <p class="form-field__wrap">
+                  <input type="email" placeholder="Введите Ваш email" required>
+                </p>
+                <div class="forgott__pass-submit">
+                    <button class="btn" type="submit">
+                      Восстановить пароль
+                    </button>
+                </div>
+              </form>
+            </div>
+           
           </div>
         </div>
       </div>
