@@ -1278,4 +1278,5 @@ input {
 .register__agree a {
   color: var(--green);
   text-decoration: underline;
+  display: inline;
 }
