@@ -5,7 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>Кабинет</title>
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -13,65 +14,66 @@
 
 <body>
 
-  <!-- header -->
-  <header class="header">
-    <div class="header__wrapper">
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__logo">
+ <!-- header -->
+ <header class="header">
+  <div class="header__wrapper">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="#!">
+            <img src="images/logo.png" alt="Логотип InfoKids">
+          </a>
+        </div>
+        <div class="header__navigation-wrap">
+          <nav class="header__navigation navigation">
+            <ul class="navgiation__list">
+              <!-- Класс active для тэга li у активного элемента -->
+              <li class="active">
+                <a href="#!">Витрина</a>
+              </li>
+              <li>
+                <a href="#!">Акции и скидки</a>
+              </li>
+              <li>
+                <a href="#!">Афиша</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="mobile__close-icon close-hamburger">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="header__search">
+          <form class="search-form" action="#!">
+            <input class="search-input header__search-input" type="text" placeholder="Поиск по сайту">
+            <button class="search-button header__search-button">Искать</button>
+          </form>
+        </div>
+        <div class="header__notif">
+          <a class="notif__link" href="#!">Уведомления</a>
+          <span class="notif__counter">1</span>
+        </div>
+        <div class="header__user-login">
+          <div class="header__user-name">
+            <a href="#!">@KingdomKids</a>
+          </div>
+          <div class="header__user-avatar">
             <a href="#!">
-              <img src="images/logo.png" alt="Логотип InfoKids">
+              <img src="images/user-avatar.png" alt="">
             </a>
           </div>
-          <div class="header__navigation-wrap">
-            <nav class="header__navigation navigation">
-              <ul class="navgiation__list">
-                <!-- Класс active для тэга li у активного элемента -->
-                <li>
-                  <a href="#!">Витрина</a>
-                </li>
-                <li>
-                  <a href="#!">Акции и скидки</a>
-                </li>
-                <li>
-                  <a href="#!">Афиша</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="mobile__close-icon close-hamburger">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-          <div class="header__search">
-            <form class="search-form" action="#!">
-              <input class="search-input header__search-input" type="text" placeholder="Поиск по сайту">
-              <button class="search-button header__search-button">Искать</button>
-            </form>
-          </div>
-          <div class="header__notif">
-            <a class="notif__link" href="#!">Уведомления</a>
-          </div>
-          <div class="header__user-nav">
-            <div class="header__user-no-login">
-              <div class="user__nav-sign-in">
-                <a href="#!">Вход</a>
-              </div>
-              <div class="user__nav-register">
-                <a href="#!">Регистрация</a>
-              </div>
-            </div>
-          </div>
-          <div class="mobile__hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        </div>
+        <div class="mobile__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>
-  </header>
-  <!-- header -->
+  </div>
+</header>
+<!-- header -->
 
   <!-- main -->
   <main class="main main-with-title">
@@ -82,13 +84,13 @@
             Личный кабинет
           </h1>
           <div class="cabinet__user">
-            <div class="cabinter__user-left">
+            <div class="cabinet__user-left">
               <div class="cabinet__user-avatar">
                 <img src="images/cabinet-ava.png" alt="">
               </div>
-              <div class="cabinet__user-sub">
-                <a href="#!">
-                  + Подписаться
+              <div class="cabinet__user-button">
+                <a class="btn-gray" href="#!">
+                  Выйти
                 </a>
               </div>
             </div>
@@ -175,7 +177,7 @@
                       </h3>
                       <div class="tc__info-item-content">
                         Пр. Ленина 12/5
-                        <a href="#!">Показать на карте</a>
+                        <a class="anchor" href="#map">Показать на карте</a>
                       </div>
                     </div>
                     <div class="tc__info-item">
@@ -223,7 +225,6 @@
                     </div>
                     <div class="tc__info-left-footer">
                       <a class="tc__info-left-share" href="#!"><span>Поделиться</span></a>
-                      <a class="tc__info-left-complaint" href="#!"><span>Жалоба</span></a>
                     </div>
                   </div>
                   <div class="tc__info-right">
@@ -265,7 +266,7 @@
                       <h3 class="tc__info-right-title">
                         Местоположение:
                       </h3>
-                      <div class="tc__info-right-map">
+                      <div class="tc__info-right-map" id="map">
                         <iframe
                           src="https://yandex.ru/map-widget/v1/?um=constructor%3A84150044e5c79bfe08a6dec881b470e424a07cc7be8e045f0df8917282a4d808&amp;source=constructor"
                           width="100%" height="360" frameborder="0"></iframe>
@@ -287,8 +288,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -298,8 +299,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -336,8 +337,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -347,8 +348,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -385,8 +386,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -396,8 +397,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -434,8 +435,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -445,8 +446,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -483,8 +484,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -494,8 +495,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -532,8 +533,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -543,8 +544,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -588,8 +589,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -599,8 +600,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -637,8 +638,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -648,8 +649,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -686,8 +687,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -697,8 +698,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -735,8 +736,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -746,8 +747,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -784,8 +785,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -795,8 +796,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -833,8 +834,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -844,8 +845,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -889,8 +890,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -900,8 +901,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -938,8 +939,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -949,8 +950,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -987,8 +988,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -998,8 +999,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -1036,8 +1037,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -1047,8 +1048,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -1085,8 +1086,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -1096,8 +1097,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -1134,8 +1135,8 @@
                           </a>
                           <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
                             <a href="#!">
-                              <svg>
-                                <use href="#heart"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#heart"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -1145,8 +1146,8 @@
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
-                              <svg>
-                                <use href="#share"></use>
+                              <svg xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#share"></use>
                               </svg>
                             </a>
                             <!-- Всплывающая подсказка -->
@@ -1180,13 +1181,162 @@
               </div>
               <div id="cabinet-5">
                 <div class="tabs__content-reviews">
-                  Отзывы
+                  <form class="tc__review-form" action="#!">
+                    <div class="tc__review-top">
+                      <h3 class="tc__review-title">
+                        Оставить отзыв
+                      </h3>
+                      <div class="cabinet__user-rating">
+                        Рейтинг: <span>5</span>
+                      </div>
+                      <div class="tc__review-ball">
+                        <div class="tc__review-ball-text">
+                          Оценка:
+                        </div>
+                        <div class="rate-yo" data-rateyo-full-star="true" data-rateyo-max-value="10"
+                          data-rateyo-rating="7"></div>
+                      </div>
+                      <div class="tc__review-ball-counter">
+                        Количество отзывов и оценок: <span>124</span>
+                      </div>
+                    </div>
+                    <div class="tc__review-textarea">
+                      <textarea placeholder="Оставьте отзыв"></textarea>
+                    </div>
+                    <div class="tc__review-send">
+                      <button type="submit">
+                        Отправить
+                      </button>
+                    </div>
+                  </form>
+                  <div class="tc__review-list">
+                    <!-- Комментарий -->
+                    <div class="tc__review-item">
+                      <div class="tc__review-item-body">
+                        <div class="tc__review-item-top">
+                          <div class="tc__review-item-nik">
+                            <a href="#!">
+                              @Андрей
+                            </a>
+                          </div>
+                          <div class="cabinet__user-rating">
+                            Оценка: <span>5</span>
+                          </div>
+                        </div>
+                        <div class="tc__review-item-date">
+                          05.01.2021
+                        </div>
+                        <p class="tc__review-item-text">
+                          Как и многие мамы, я люблю заниматься с сыном творческими занятиями. Это не только полезно
+                          (для нас обоих), но и бывает очень увлекательно. Правда, так как времени в связи с появлением
+                          маленького ребенка совсем немного, последнее время в приоритете у нас готовые наборы для
+                          творчества. Конкретно набор именно этой фирмы я приобрела первый раз. Сразу скажу, что в целом
+                          набор мне понравился (но есть один достаточно крупный недочет). Цена за набор, на мой взгляд,
+                          неплохая. Встречала скромнее наборы за более высокую цену.
+                        </p>
+                      </div>
+                      <!-- Ответ -->
+                      <div class="tc__review-item-answer">
+                        <div class="tc__review-answer-name">
+                          ООО “Виктория ИТ-сопровождение” <span>@victoriait</span>
+                        </div>
+                        <div class="tc__review-item-date">
+                          05.01.2021
+                        </div>
+                        <p class="tc__review-item-text">
+                          Как и многие мамы, я люблю заниматься с сыном творческими занятиями. Это не только полезно
+                          (для нас обоих), но и бывает очень увлекательно. Правда, так как времени в связи с появлением
+                          маленького ребенка совсем немного, последнее время в приоритете у нас готовые наборы для
+                          творчества. Конкретно набор именно этой фирмы я приобрела первый раз. Сразу скажу, что в целом
+                          набор мне понравился (но есть один достаточно крупный недочет). Цена за набор, на мой взгляд,
+                          неплохая. Встречала скромнее наборы за более высокую цену.
+                        </p>
+                      </div>
+                    </div>
+                     <!-- Комментарий -->
+                    <div class="tc__review-item">
+                      <div class="tc__review-item-body">
+                        <div class="tc__review-item-top">
+                          <div class="tc__review-item-nik">
+                            <a href="#!">
+                              @Андрей
+                            </a>
+                          </div>
+                          <div class="cabinet__user-rating">
+                            Оценка: <span>5</span>
+                          </div>
+                        </div>
+                        <div class="tc__review-item-date">
+                          05.01.2021
+                        </div>
+                        <p class="tc__review-item-text">
+                          Как и многие мамы, я люблю заниматься с сыном творческими занятиями. Это не только полезно
+                          (для нас обоих), но и бывает очень увлекательно. Правда, так как времени в связи с появлением
+                          маленького ребенка совсем немного, последнее время в приоритете у нас готовые наборы для
+                          творчества. Конкретно набор именно этой фирмы я приобрела первый раз. Сразу скажу, что в целом
+                          набор мне понравился (но есть один достаточно крупный недочет). Цена за набор, на мой взгляд,
+                          неплохая. Встречала скромнее наборы за более высокую цену.
+                        </p>
+                      </div>
+                    </div>
+                     <!-- Комментарий -->
+                    <div class="tc__review-item">
+                      <div class="tc__review-item-body">
+                        <div class="tc__review-item-top">
+                          <div class="tc__review-item-nik">
+                            <a href="#!">
+                              @Андрей
+                            </a>
+                          </div>
+                          <div class="cabinet__user-rating">
+                            Оценка: <span>5</span>
+                          </div>
+                        </div>
+                        <div class="tc__review-item-date">
+                          05.01.2021
+                        </div>
+                        <p class="tc__review-item-text">
+                          Как и многие мамы, я люблю заниматься с сыном творческими занятиями. Это не только полезно
+                          (для нас обоих), но и бывает очень увлекательно. Правда, так как времени в связи с появлением
+                          маленького ребенка совсем немного, последнее время в приоритете у нас готовые наборы для
+                          творчества. Конкретно набор именно этой фирмы я приобрела первый раз. Сразу скажу, что в целом
+                          набор мне понравился (но есть один достаточно крупный недочет). Цена за набор, на мой взгляд,
+                          неплохая. Встречала скромнее наборы за более высокую цену.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="rightside rightside__mobile-offcanvas">
+          <div class="rightside__navigation rightside__navigation-cabinet">
+            <nav>
+              <!-- Класс active для тэга li у активного элемента -->
+              <ul>
+                <li class="rightside__link active">
+                  <a href="#!">Моя страница</a>
+                </li>
+                <li class="rightside__link rightside__link--min">
+                  <a href="#!">Я продавец</a>
+                </li>
+                <li class="rightside__link rightside__link--min">
+                  <a href="#!">Я покупатель</a>
+                </li>
+                <li class="rightside__link">
+                  <a href="#!">Уведомления</a>
+                </li>
+                <li class="rightside__link">
+                  <a href="#!">Безопасность</a>
+                </li>
+                <li class="rightside__link">
+                  <a href="#!">Настройки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="rightside__advertising">
             <a href="#!">
               <img src="images/content/product-img-1.jpg" alt="Реклама">
@@ -1195,6 +1345,7 @@
           <div class="rightside__navigation-wrap">
             <div class="rightside__navigation">
               <nav>
+                <!-- Класс active для тэга li у активного элемента -->
                 <ul>
                   <li class="rightside__link">
                     <a href="#!">Новости Kids Info</a>
@@ -1347,7 +1498,7 @@
   <!-- scroll-top-icon -->
 
   <!-- sprite svg -->
-  <svg display="none" xmlns="http://www.w3.org/2000/svg">
+  <svg class="app-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol id="heart" viewBox="0 0 28 24">
       <path
         d="M14 4.66667L15.9697 2.73684C18.3333 0.421053 22.2235 0.421053 24.6364 2.73684L25.2273 3.31579C27.5909 5.63158 27.5909 9.44298 25.2273 11.807L21.5833 15.3772L14.0492 23L6.41667 15.3772L2.77273 11.807C0.409091 9.49123 0.409091 5.67982 2.77273 3.31579L3.36364 2.73684C5.72727 0.421053 9.61742 0.421053 12.0303 2.73684L14 4.66667Z" />
@@ -1392,6 +1543,7 @@
 
   <script src="js/jquery.min.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
