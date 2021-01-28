@@ -1829,7 +1829,7 @@ input {
   text-align: center;
   font-size: 20px;
   line-height: 26px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 
@@ -2739,7 +2739,7 @@ input {
 }
 
 .tc__review-answer-form button {
-  font-weight: 600px;
+  font-weight: 600;
   padding: 9px;
   background-color: var(--green-bg);
   -webkit-border-radius: 4px;
