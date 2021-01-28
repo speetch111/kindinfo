@@ -14,66 +14,66 @@
 
 <body>
 
- <!-- header -->
- <header class="header">
-  <div class="header__wrapper">
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__logo">
-          <a href="#!">
-            <img src="images/logo.png" alt="Логотип InfoKids">
-          </a>
-        </div>
-        <div class="header__navigation-wrap">
-          <nav class="header__navigation navigation">
-            <ul class="navgiation__list">
-              <!-- Класс active для тэга li у активного элемента -->
-              <li class="active">
-                <a href="#!">Витрина</a>
-              </li>
-              <li>
-                <a href="#!">Акции и скидки</a>
-              </li>
-              <li>
-                <a href="#!">Афиша</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="mobile__close-icon close-hamburger">
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <div class="header__search">
-          <form class="search-form" action="#!">
-            <input class="search-input header__search-input" type="text" placeholder="Поиск по сайту">
-            <button class="search-button header__search-button">Искать</button>
-          </form>
-        </div>
-        <div class="header__notif">
-          <a class="notif__link" href="#!">Уведомления</a>
-          <span class="notif__counter">1</span>
-        </div>
-        <div class="header__user-login">
-          <div class="header__user-name">
-            <a href="#!">@KingdomKids</a>
-          </div>
-          <div class="header__user-avatar">
+  <!-- header -->
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
             <a href="#!">
-              <img src="images/user-avatar.png" alt="">
+              <img src="images/logo.png" alt="Логотип InfoKids">
             </a>
           </div>
-        </div>
-        <div class="mobile__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <div class="header__navigation-wrap">
+            <nav class="header__navigation navigation">
+              <ul class="navgiation__list">
+                <!-- Класс active для тэга li у активного элемента -->
+                <li class="active">
+                  <a href="#!">Витрина</a>
+                </li>
+                <li>
+                  <a href="#!">Акции и скидки</a>
+                </li>
+                <li>
+                  <a href="#!">Афиша</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="mobile__close-icon close-hamburger">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="header__search">
+            <form class="search-form" action="#!">
+              <input class="search-input header__search-input" type="text" placeholder="Поиск по сайту">
+              <button class="search-button header__search-button">Искать</button>
+            </form>
+          </div>
+          <div class="header__notif">
+            <a class="notif__link" href="#!">Уведомления</a>
+            <span class="notif__counter">1</span>
+          </div>
+          <div class="header__user-login">
+            <div class="header__user-name">
+              <a href="#!">@KingdomKids</a>
+            </div>
+            <div class="header__user-avatar">
+              <a href="#!">
+                <img src="images/user-avatar.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="mobile__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
-<!-- header -->
+  </header>
+  <!-- header -->
 
   <!-- main -->
   <main class="main main-with-title">
@@ -280,22 +280,15 @@
                 <div class="tabs__content-products">
                   <div class="products__inner">
                     <!-- Класс products__item-wrap--big для большого объявления -->
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <!-- Класс product__item-wrap--actions для объявления на странице пользователя,который выложил объявление -->
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -319,8 +312,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -329,22 +329,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -368,8 +360,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -378,22 +377,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <!-- Класс products__item-wrap--big для большого объявления -->
+                    <!-- Класс product__item-wrap--actions для объявления на странице пользователя,который выложил объявление -->
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -417,8 +410,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -427,22 +427,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <!-- Класс products__item-wrap--big для большого объявления -->
+                    <!-- Класс product__item-wrap--actions для объявления на странице пользователя,который выложил объявление -->
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -466,8 +460,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -476,22 +477,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <!-- Класс products__item-wrap--big для большого объявления -->
+                    <!-- Класс product__item-wrap--actions для объявления на странице пользователя,который выложил объявление -->
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -515,8 +510,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -525,22 +527,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -564,12 +558,37 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Добавить объявление -->
+                    <div class="product__item-wrap product__item-wrap--add">
+                      <div class="product__item">
+                        <div class="product__item-add">
+                          <a class="product__item-add-img" href="#!">
+                            <img src="images/add-icon.svg" alt="">
+                          </a>
+                          <div class="product__item-add-link">
+                            <a href="#!">
+                              + Добавить объявление
+                            </a>
+                          </div>
+                          <div class="product__item-add-text">
+                            Вы можете добавить еще 10 объявлений
                           </div>
                         </div>
                       </div>
@@ -581,22 +600,14 @@
                 <div class="tabs__content-products">
                   <div class="products__inner">
                     <!-- Класс products__item-wrap--big для большого объявления -->
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -620,8 +631,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -630,22 +648,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -669,8 +679,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -679,22 +696,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -718,8 +727,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -728,22 +744,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -767,8 +775,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -777,22 +792,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -816,8 +823,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -826,22 +840,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -865,12 +871,37 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Добавить объявление -->
+                    <div class="product__item-wrap product__item-wrap--add">
+                      <div class="product__item">
+                        <div class="product__item-add">
+                          <a class="product__item-add-img" href="#!">
+                            <img src="images/add-icon.svg" alt="">
+                          </a>
+                          <div class="product__item-add-link">
+                            <a href="#!">
+                              + Добавить объявление
+                            </a>
+                          </div>
+                          <div class="product__item-add-text">
+                            Вы можете добавить еще 10 объявлений
                           </div>
                         </div>
                       </div>
@@ -882,22 +913,14 @@
                 <div class="tabs__content-products">
                   <div class="products__inner">
                     <!-- Класс products__item-wrap--big для большого объявления -->
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -921,8 +944,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -931,22 +961,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -970,8 +992,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -980,22 +1009,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -1019,8 +1040,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -1029,22 +1057,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -1068,8 +1088,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -1078,22 +1105,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -1117,8 +1136,15 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
@@ -1127,22 +1153,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="product__item-wrap product__item-wrap--big">
+                    <div class="product__item-wrap product__item-wrap--big product__item-wrap--actions">
                       <div class="product__item">
                         <div class="product__item-img">
                           <a href="#!">
                             <img src="images/product-img-2.jpg" alt="Удобный детский горшок Pourty Easy-to-Pour Potty">
                           </a>
-                          <div class="product__item-wishlist product__item-icon open-popup" data-popup="popup-sign-in">
-                            <a href="#!">
-                              <svg xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#heart"></use>
-                              </svg>
-                            </a>
-                            <!-- Всплывающая подсказка -->
-                            <span class="product__item-tooltip product__item-wishlist-tooltip ">Добавить в
-                              избранное</span>
-                            <!-- Всплывающая подсказка -->
+                          <div class="product__item-status">
+                            <span>На проверке</span>
                           </div>
                           <div class="product__item-share product__item-icon">
                             <a href="#!">
@@ -1166,12 +1184,37 @@
                             </p>
                           </div>
                           <div class="product__item-footer">
-                            <div class="product__item-author">
-                              <a href="#!">Nika Ivanova</a>
+                            <div class="product__item-actions">
+                              <div class="select__wrapper">
+                                <select>
+                                  <option value="">Действия</option>
+                                  <option value="">aasdddddddddddddddddddd1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
                             </div>
                             <div class="product__item-views">
                               <span>2 512</span>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Добавить объявление -->
+                    <div class="product__item-wrap product__item-wrap--add">
+                      <div class="product__item">
+                        <div class="product__item-add">
+                          <a class="product__item-add-img" href="#!">
+                            <img src="images/add-icon.svg" alt="">
+                          </a>
+                          <div class="product__item-add-link">
+                            <a href="#!">
+                              + Добавить объявление
+                            </a>
+                          </div>
+                          <div class="product__item-add-text">
+                            Вы можете добавить еще 10 объявлений
                           </div>
                         </div>
                       </div>
@@ -1181,34 +1224,6 @@
               </div>
               <div id="cabinet-5">
                 <div class="tabs__content-reviews">
-                  <form class="tc__review-form" action="#!">
-                    <div class="tc__review-top">
-                      <h3 class="tc__review-title">
-                        Оставить отзыв
-                      </h3>
-                      <div class="cabinet__user-rating">
-                        Рейтинг: <span>5</span>
-                      </div>
-                      <div class="tc__review-ball">
-                        <div class="tc__review-ball-text">
-                          Оценка:
-                        </div>
-                        <div class="rate-yo" data-rateyo-full-star="true" data-rateyo-max-value="10"
-                          data-rateyo-rating="7"></div>
-                      </div>
-                      <div class="tc__review-ball-counter">
-                        Количество отзывов и оценок: <span>124</span>
-                      </div>
-                    </div>
-                    <div class="tc__review-textarea">
-                      <textarea placeholder="Оставьте отзыв"></textarea>
-                    </div>
-                    <div class="tc__review-send">
-                      <button type="submit">
-                        Отправить
-                      </button>
-                    </div>
-                  </form>
                   <div class="tc__review-list">
                     <!-- Комментарий -->
                     <div class="tc__review-item">
@@ -1253,7 +1268,7 @@
                         </p>
                       </div>
                     </div>
-                     <!-- Комментарий -->
+                    <!-- Комментарий -->
                     <div class="tc__review-item">
                       <div class="tc__review-item-body">
                         <div class="tc__review-item-top">
@@ -1278,8 +1293,20 @@
                           неплохая. Встречала скромнее наборы за более высокую цену.
                         </p>
                       </div>
+                      <!-- Открыть форму ответа -->
+                      <div class="tc__review-answer-form-wrapper">
+                        <div class="tc__review-answer-form-open">
+                          <button>
+                            Ответить
+                          </button>
+                        </div>
+                        <form action="#!" class="tc__review-answer-form">
+                          <textarea placeholder="">Текст ответа</textarea>
+                          <button type="submit">Отправить</button>
+                        </form>
+                      </div>
                     </div>
-                     <!-- Комментарий -->
+                    <!-- Комментарий -->
                     <div class="tc__review-item">
                       <div class="tc__review-item-body">
                         <div class="tc__review-item-top">
@@ -1303,6 +1330,18 @@
                           набор мне понравился (но есть один достаточно крупный недочет). Цена за набор, на мой взгляд,
                           неплохая. Встречала скромнее наборы за более высокую цену.
                         </p>
+                        <!-- Открыть форму ответа -->
+                        <div class="tc__review-answer-form-wrapper">
+                          <div class="tc__review-answer-form-open">
+                            <button>
+                              Ответить
+                            </button>
+                          </div>
+                          <form action="#!" class="tc__review-answer-form">
+                            <textarea placeholder="">Текст ответа</textarea>
+                            <button type="submit">Отправить</button>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1319,7 +1358,7 @@
                 <li class="rightside__link active">
                   <a href="#!">Моя страница</a>
                 </li>
-                <li class="rightside__link rightside__link--min">
+                <li class="rightside__link rightside__link--min active">
                   <a href="#!">Я продавец</a>
                 </li>
                 <li class="rightside__link rightside__link--min">

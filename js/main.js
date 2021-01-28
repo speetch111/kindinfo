@@ -175,6 +175,11 @@ $(function () {
 
   $('.tabs__links li:first-child a').click();
 
+
+  $('.tc__review-answer-form-open button').click(function () {
+    $(this).parent().siblings('.tc__review-answer-form').slideToggle(300);
+  });
+
 });
 
 
