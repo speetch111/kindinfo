@@ -677,7 +677,10 @@
 }
 
 @media (max-width: 560px) {
-
+  .product__search-input,
+  .header__search-input {
+    padding-left: 15px;
+  }
 
   .autorized__links li {
     width: 50%;
