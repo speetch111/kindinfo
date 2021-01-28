@@ -1138,7 +1138,7 @@ input {
 }
 
 .product__item-wrap--big .product__item-img img {
-  height: 100%;
+  display: flex;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1169,7 +1169,6 @@ input {
 }
 
 .product__item-wrap--min .product__item-img img {
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
