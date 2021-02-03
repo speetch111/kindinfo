@@ -5,7 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>Настройки</title>
+  <title>Настройки - я покупатель</title>
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -82,7 +84,7 @@
           <h1 class="page__title">
             Настройки
           </h1>
-          <div class="cabinet__user">
+          <div class="cabinet__user cabinet__user-buyer">
             <div class="cabinet__user-left">
               <div class="cabinet__user-avatar">
                 <img src="images/cabinet-ava.png" alt="">
@@ -98,27 +100,11 @@
                 <div class="cabinet__user-name">
                   <input type="text" value="ООО “Виктория ИТ-сопровождение”">
                 </div>
-                <div class="cabinet__user-rating">
-                  Рейтинг: <span>5</span>
+                <div class="cabinet__user-buyer-register">
+                  На сайте с <span>01.01.2021</span>
                 </div>
                 <div class="cabinet__user-nik">
                   @victoriait
-                </div>
-                <div class="cabinet__user-sub-counter">
-                  Подписчики: <span>4126</span>
-                </div>
-              </div>
-              <div class="cabinet__user-subtop">
-                <div class="cabinet__user-profession">
-                  <div class="select__wrapper">
-                    <select>
-                      <option value="1">Частный специалист</option>
-                      <option value="1" selected>Юридическая организация</option>
-                    </select>
-                  </div>
-                </div>
-                <div>
-                  На сайте с <span>01.01.2021</span>
                 </div>
               </div>
               <div class="cabinet__user-descr">
@@ -127,192 +113,20 @@
             </div>
           </div>
           <div class="cabinet-tabs tabs">
-            <ul class="tabs__links">
+            <ul class="settings__links">
               <li>
-                <a href="#settings-1">Я продавец</a>
+                <a href="settings-prodavec.html">Я продавец</a>
+              </li>
+              <li class="active">
+                <a href="#!">Я покупатель</a>
               </li>
               <li>
-                <a href="#settings-2">Я покупатель</a>
-              </li>
-              <li>
-                <a href="#settings-3">Уведомления</a>
+                <a href="settings-notif.html">Уведомления</a>
               </li>
             </ul>
-            <div class="tabs__content cabinet-tabs__content">
-              <div id="settings-1">
+            <div class="cabinet-tabs__content">
+              <div class="cabinet-buyer">
                 <form action="#!">
-                  <div class="tabs__content-info">
-                    <div class="tc__info-left">
-                      <div class="tc__info-item">
-                        <h3 class="tc__info-item-title">
-                          Страна:
-                        </h3>
-                        <div class="tc__info-item-content">
-                          <div class="select__wrapper rightside__select-wrapper">
-                            <select>
-                              <option value="">Россия</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tc__info-item">
-                        <h3 class="tc__info-item-title">
-                          Регион:
-                        </h3>
-                        <div class="tc__info-item-content">
-                          <div class="select__wrapper rightside__select-wrapper">
-                            <select>
-                              <option value="">Московская область</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tc__info-item">
-                        <h3 class="tc__info-item-title">
-                          Город:
-                        </h3>
-                        <div class="tc__info-item-content">
-                          <div class="select__wrapper rightside__select-wrapper">
-                            <select>
-                              <option value="">Москва</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tc__info-item">
-                        <h3 class="tc__info-item-title">
-                          Адрес:
-                        </h3>
-                        <div class="tc__info-item-content">
-                          <input type="text" value="Пр. Ленина 12/5">
-                        </div>
-                      </div>
-                      <div class="tc__info-item">
-                        <h3 class="tc__info-item-title">
-                          Сайт:
-                        </h3>
-                        <div class="tc__info-item-content">
-                          <input type="text" value="qweqweqwe.com">
-                        </div>
-                      </div>
-                      <div class="tc__info-item">
-                        <h3 class="tc__info-item-title">
-                          Телефон:
-                        </h3>
-                        <div class="tc__info-item-content">
-                          <input type="tel" value="+7 495 285 17 10">
-                        </div>
-                      </div>
-                      <div class="tc__info-item">
-                        <h3 class="tc__info-item-title">
-                          Email:
-                        </h3>
-                        <div class="tc__info-item-content">
-                          <input type="email" value="victoria@admin.ru">
-                        </div>
-                      </div>
-                      <div class="tc__info-item">
-                        <h3 class="tc__info-item-title">
-                          Соц. сети:
-                        </h3>
-                        <ul class="social__list-settings">
-                          <li class="social__item-settings">
-                            <div class="social__link social--vk">
-                              Вконтакте
-                            </div>
-                            <input type="email" placeholder="Вставьте ссылку">
-                          </li>
-                          <li class="social__item-settings">
-                            <div class="social__link social--fb">
-                              Фейсбук
-                            </div>
-                            <input type="email" placeholder="Вставьте ссылку">
-                          </li>
-                          <li class="social__item-settings">
-                            <div class="social__link social--you">
-                              Ютуб
-                            </div>
-                            <input type="email" placeholder="Вставьте ссылку">
-                          </li>
-                          <li class="social__item-settings">
-                            <div class="social__link social--inst">
-                              Инстаграм
-                            </div>
-                            <input type="email" placeholder="Вставьте ссылку">
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="tc__info-right">
-                      <div class="tc__info-right-item">
-                        <h3 class="tc__info-right-title">
-                          Товары
-                        </h3>
-                        <ul class="tc__info-right-tags">
-                          <li><a href="#!">Беременность</a></li>
-                          <li><a href="#!">Образование и развитие</a></li>
-                          <li><a href="#!">Парикмахерские и ателье</a></li>
-                          <li><a href="#!">Здоровье и лечение</a></li>
-                          <li><a href="#!">Финансовые услуги</a></li>
-                          <li><a href="#!">Беременность</a></li>
-                          <li><a href="#!">Образование и развитие</a></li>
-                          <li><a href="#!">Парикмахерские и ателье</a></li>
-                          <li><a href="#!">Здоровье и лечение</a></li>
-                          <li><a href="#!">Финансовые услуги</a></li>
-                        </ul>
-                      </div>
-                      <div class="tc__info-right-item">
-                        <h3 class="tc__info-right-title">
-                          Услуги
-                        </h3>
-                        <ul class="tc__info-right-tags">
-                          <li><a href="#!">Беременность</a></li>
-                          <li><a href="#!">Образование и развитие</a></li>
-                          <li><a href="#!">Парикмахерские и ателье</a></li>
-                          <li><a href="#!">Здоровье и лечение</a></li>
-                          <li><a href="#!">Финансовые услуги</a></li>
-                          <li><a href="#!">Беременность</a></li>
-                          <li><a href="#!">Образование и развитие</a></li>
-                          <li><a href="#!">Парикмахерские и ателье</a></li>
-                          <li><a href="#!">Здоровье и лечение</a></li>
-                          <li><a href="#!">Финансовые услуги</a></li>
-                        </ul>
-                      </div>
-                      <div class="tc__info-right-item">
-                        <h3 class="tc__info-right-title">
-                          Категории клиентов
-                        </h3>
-                        <ul class="tc__info-right-tags">
-                          <li><a href="#!">0+</a></li>
-                          <li><a href="#!">1-3</a></li>
-                          <li><a href="#!">11-15</a></li>
-                          <li><a href="#!">11-15</a></li>
-                          <li><a href="#!">11-15</a></li>
-                        </ul>
-                      </div>
-                      <div class="setting__save">
-                        <a href="#!">
-                          Сохранить изменения
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div id="settings-2">
-                <div class="cabinet-buyer">
                   <div class="cabinet__main-page">
                     <label class="check__label">
                       <input class="check__input" type="checkbox">
@@ -458,7 +272,7 @@
                                   <label class="radio__label">
                                     <input class="radio__input" type="radio" name="kid__gender">
                                     <span class="radio__box"></span>
-                                   Мальчик
+                                    Мальчик
                                   </label>
                                   <label class="radio__label">
                                     <input class="radio__input" type="radio" name="kid__gender">
@@ -468,6 +282,9 @@
                                 </div>
                               </div>
                               <div class="setting-buyer__add-kid-date">
+                                <h3>
+                                  Возраст:
+                                </h3>
                                 <input type="date" placeholder="Дата рождения">
                               </div>
                               <div class="setting-buyer__add-kid-kinship select__wrapper">
@@ -488,7 +305,7 @@
                                 <div class="setting-buyer_add-kid-cancel">
                                   <a href="#!">
                                     Отмена
-                                  </a>  
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -537,12 +354,7 @@
                       Сохранить изменения
                     </a>
                   </div>
-                </div>
-              </div>
-              <div id="settings-3">
-                <div class="tabs__content-products">
-                  Уведомления
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -774,6 +586,7 @@
   <script src="js/jquery.min.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

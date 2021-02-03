@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>Помощь</title>
+  <title>Публикация объявления</title>
   <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -82,44 +82,119 @@
       <div class="page__inner">
         <div class="page__content">
           <h1 class="page__title">
-            Помощь
+            Публикация объявления
           </h1>
-          <div class="help__wrapper">
-            <form action="#!">
-              <div class="form-field__wrap">
-                <input type="text" placeholder="Тема вопроса" required>
-              </div>
-              <div class="form-field__wrap">
-                <div class="select__wrapper">
-                  <select>
-                    <option value="0">Выберите раздел</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
+          <div class="public__wrapper">
+            <h3 class="public__title">
+              Выберите размер баннера
+            </h3>
+            <div class="public__size">
+              <div class="public__size-item public__size-item--big active">
+                <div class="public__type-wrap">
+                  <div class="public__type">
+                    Премиум
+                  </div>
+                  <div class="public__type-price">
+                    225 руб.
+                  </div>
+                </div>
+                <div class="product__item-wrap product__item-wrap--big">
+                  <div class="product__item">
+                    <div class="product__item-img">
+                        <img src="images/camera.svg" alt="Картинка объявления">
+                      <div class="product__item-wishlist product__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#heart"></use>
+                          </svg>
+                      </div>
+                      <div class="product__item-share product__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#share"></use>
+                          </svg>
+                      </div>
+                    </div>
+                    <div class="product__item-descr">
+                      <h3 class="product__item-title">
+                        Заголовок вашего обьявления
+                      </h3>
+                      <div class="product__item-text">
+                        <p>
+                          Текстовое описание Вашего обьявления
+                        </p>
+                      </div>
+                      <div class="product__item-footer">
+                        <div class="product__item-author">
+                          <a href="#!">Nika Ivanova</a>
+                        </div>
+                        <div class="product__item-views">
+                          <span>2 512</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="form-field__wrap">
-                <input type="email" placeholder="Ваш email">
-              </div>
-              <div class="form-field__wrap">
-                <textarea placeholder="Текст вопроса"></textarea>
-              </div>
-              <div class="help-form__footer">
-                <div class="help-form__add-file">
-                 <a href="#!">Прикрепить файл</a> 
+              <div class="public__size-item public__size-item--min">
+                <div class="public__type-wrap">
+                  <div class="public__type">
+                    Стандарт
+                  </div>
+                  <div class="public__type-price">
+                    99 руб.
+                  </div>
                 </div>
-                <div class="help-form__submit">
-                  <button type="submit">
-                    Отправить
-                  </button>
-                </div>
-                <div class="help-form__criterion">
-                  Обратите внимание: Вы можете загрузить до 5 файлов. Поддерживаемые типы файлов jpg, jpeg, pdf
+                <div class="product__item-wrap product__item-wrap--min">
+                  <div class="product__item">
+                    <div class="product__item-img">
+                        <img src="images/camera.svg" alt="Картинка объявления">
+                      <div class="product__item-wishlist product__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#heart"></use>
+                          </svg>
+                      </div>
+                      <div class="product__item-share product__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="#share"></use>
+                          </svg>
+                      </div>
+                    </div>
+                    <div class="product__item-descr">
+                      <h3 class="product__item-title">
+                        Заголовок вашего обьявления
+                      </h3>
+                      <div class="product__item-footer">
+                        <div class="product__item-author">
+                          <a href="#!">Nika Ivanova</a>
+                        </div>
+                        <div class="product__item-views">
+                          <span>2 512</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </form>
+            </div>
+            <h3 class="public__title">
+              Выберите срок размещения
+            </h3>
+            <div class="public__days-slider">
+              <input type="text" class="js-range-slider" name="my_range" value="" data-min="5" data-max="30" data-from="20" tabindex="-1" >
+            </div>
+            <div class="public__footer">
+              <div class="public__sum">
+                Стоимость публикации: <span>225 руб</span>
+              </div>
+              <div class="public__btns">
+                <!-- Класс active для активной кнопки -->
+                <a href="#!" class="active">
+                  Оплатить
+                </a>
+                <a href="#!">
+                  Опубликовать
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="rightside rightside__mobile-offcanvas">
@@ -158,7 +233,7 @@
                   <li class="rightside__link">
                     <a href="#!">Справочник</a>
                   </li>
-                  <li class="rightside__link active">
+                  <li class="rightside__link">
                     <a href="#!">Помощь</a>
                   </li>
                   <li class="rightside__link">
@@ -231,7 +306,7 @@
               <li>
                 <a href="#!">Правила</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="#!">Помощь</a>
               </li>
               <li>
@@ -347,9 +422,9 @@
 
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/jquery.rateyo.min.js"></script>
-  <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

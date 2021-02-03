@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>Помощь</title>
+  <title>Создать объявление</title>
   <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -82,44 +82,248 @@
       <div class="page__inner">
         <div class="page__content">
           <h1 class="page__title">
-            Помощь
+            Cоздать объявление
           </h1>
-          <div class="help__wrapper">
+
+          <div class="adt__wrapper">
             <form action="#!">
-              <div class="form-field__wrap">
-                <input type="text" placeholder="Тема вопроса" required>
-              </div>
-              <div class="form-field__wrap">
-                <div class="select__wrapper">
-                  <select>
-                    <option value="0">Выберите раздел</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  Рубрика размещения
+                </h3>
+                <div class="adt__radio">
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input class="adt-input" type="radio" name="rubrika-obyalveniya">
+                      <span>Витрина</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="radio" name="rubrika-obyalveniya">
+                      <span>Акции и скидки</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="radio" name="rubrika-obyalveniya">
+                      <span>Афиша</span>
+                    </label>
+                  </div>
                 </div>
               </div>
-              <div class="form-field__wrap">
-                <input type="email" placeholder="Ваш email">
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  Добавить фотографию
+                </h3>
+                <div class="adt__photo-wrap">
+                  <div class="adt__photo">
+                    <a href="#!">
+                      <img src="images/camera.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="adt-criterion">
+                    Максимальный размер изображения 3 MB
+                  </div>
+                </div>
               </div>
-              <div class="form-field__wrap">
-                <textarea placeholder="Текст вопроса"></textarea>
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  Укажите заголовок
+                </h3>
+                <div class="adt__input">
+                  <input type="text" placeholder="Введите текст">
+                  <span class="adt-criterion">Не более 20 символов.</span>
+                </div>
               </div>
-              <div class="help-form__footer">
-                <div class="help-form__add-file">
-                 <a href="#!">Прикрепить файл</a> 
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  Укажите описание
+                </h3>
+                <div class="adt__textarea">
+                  <textarea placeholder="Введите текст"></textarea>
+                  <span class="adt-criterion">Не более 20 символов.</span>
                 </div>
-                <div class="help-form__submit">
-                  <button type="submit">
-                    Отправить
-                  </button>
+              </div>
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  Вставьте ссылку для перехода
+                </h3>
+                <div class="adt__input">
+                  <input type="text" placeholder="https://">
                 </div>
-                <div class="help-form__criterion">
-                  Обратите внимание: Вы можете загрузить до 5 файлов. Поддерживаемые типы файлов jpg, jpeg, pdf
+              </div>
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  Выберите раздел объявления
+                </h3>
+                <div class="adt__radio">
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="radio" name="razdel-obyalveniya">
+                      <span>Товары</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="radio" name="razdel-obyalveniya">
+                      <span>Услуги</span>
+                    </label>
+                  </div>
                 </div>
+              </div>
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  Выберите категорию
+                </h3>
+                <div class="adt__select">
+                  <div class="select__wrapper">
+                    <select>
+                      <option value="">Игры и игрушки</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  География клиентов
+                </h3>
+                <div class="adt__select">
+                  <div class="select__wrapper">
+                    <select>
+                      <option value="">Укажите страну</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                  <div class="select__wrapper">
+                    <select>
+                      <option value="">Укажите регион</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                  <div class="select__wrapper">
+                    <select>
+                      <option value="">Укажите город</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="adt__box">
+                <h3 class="adt__title">
+                  Категории клиентов
+                </h3>
+                <div class="adt__checkbox">
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="checkbox">
+                      <span>0+</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="checkbox">
+                      <span>1-3</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="checkbox">
+                      <span>4-6</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="checkbox">
+                      <span>7-10</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="checkbox">
+                      <span>11-15</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="checkbox">
+                      <span>16+</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="checkbox">
+                      <span>Беременность</span>
+                    </label>
+                  </div>
+                  <div class="adt-label__wrap">
+                    <label>
+                      <input type="checkbox">
+                      <span>Планирование</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="adt__submit">
+                <button type="submit">
+                  Создать
+                </button>
               </div>
             </form>
+          </div>
+
+          <h2 class="adt-preview__title">
+            Предварительный просмотр
+          </h2>
+          <div class="adt-preview__wrap">
+            <div class="product__item-wrap product__item-wrap--big">
+              <div class="product__item">
+                <div class="product__item-img">
+                  <img src="images/content/product-img-1.jpg" alt="Картинка объявления">
+                  <div class="product__item-wishlist product__item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#heart"></use>
+                    </svg>
+                  </div>
+                  <div class="product__item-share product__item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="product__item-descr">
+                  <h3 class="product__item-title">
+                    Заголовок вашего обьявления
+                  </h3>
+                  <div class="product__item-text">
+                    <p>
+                      Текстовое описание Вашего обьявления
+                    </p>
+                  </div>
+                  <div class="product__item-footer">
+                    <div class="product__item-author">
+                      <a href="#!">Nika Ivanova</a>
+                    </div>
+                    <div class="product__item-views">
+                      <span>2 512</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="rightside rightside__mobile-offcanvas">
@@ -158,7 +362,7 @@
                   <li class="rightside__link">
                     <a href="#!">Справочник</a>
                   </li>
-                  <li class="rightside__link active">
+                  <li class="rightside__link">
                     <a href="#!">Помощь</a>
                   </li>
                   <li class="rightside__link">
@@ -231,7 +435,7 @@
               <li>
                 <a href="#!">Правила</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="#!">Помощь</a>
               </li>
               <li>
@@ -347,9 +551,9 @@
 
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/jquery.rateyo.min.js"></script>
-  <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

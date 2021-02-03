@@ -37,6 +37,10 @@ $(function () {
 $(function () {
   app__mobile();
 
+  $(".js-range-slider").ionRangeSlider({
+    grid: false,
+    postfix: ' дней ',
+  });
 
 
   $('a.anchor').click(function () {
@@ -190,6 +194,11 @@ $(function () {
 
   $('.setting-buyer_add-kid-cancel').click(function () {
     $(this).parents('.setting-buyer_add-kid-content').slideUp(300);
+  });
+
+
+  $('.public__size-item').click(function () {
+    $(this).addClass('active').siblings().removeClass('active');
   });
 
 });

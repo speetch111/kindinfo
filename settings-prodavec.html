@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>Помощь</title>
+  <title>Настройки</title>
   <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -80,46 +80,246 @@
   <main class="main main-with-title">
     <div class="container">
       <div class="page__inner">
-        <div class="page__content">
+        <div class="page__content settings__content">
           <h1 class="page__title">
-            Помощь
+            Настройки
           </h1>
-          <div class="help__wrapper">
-            <form action="#!">
-              <div class="form-field__wrap">
-                <input type="text" placeholder="Тема вопроса" required>
+          <div class="cabinet__user">
+            <div class="cabinet__user-left">
+              <div class="cabinet__user-avatar">
+                <img src="images/cabinet-ava.png" alt="">
               </div>
-              <div class="form-field__wrap">
-                <div class="select__wrapper">
-                  <select>
-                    <option value="0">Выберите раздел</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
+              <div class="cabinet__user-button">
+                <a class="btn-green" href="#!">
+                  Изменить фото
+                </a>
+              </div>
+            </div>
+            <div class="cabinet__user-right">
+              <div class="cabinet__user-top">
+                <div class="cabinet__user-name">
+                  <input type="text" value="ООО “Виктория ИТ-сопровождение”">
+                </div>
+                <div class="cabinet__user-rating">
+                  Рейтинг: <span>5</span>
+                </div>
+                <div class="cabinet__user-nik">
+                  @victoriait
+                </div>
+                <div class="cabinet__user-sub-counter">
+                  Подписчики: <span>4126</span>
                 </div>
               </div>
-              <div class="form-field__wrap">
-                <input type="email" placeholder="Ваш email">
-              </div>
-              <div class="form-field__wrap">
-                <textarea placeholder="Текст вопроса"></textarea>
-              </div>
-              <div class="help-form__footer">
-                <div class="help-form__add-file">
-                 <a href="#!">Прикрепить файл</a> 
+              <div class="cabinet__user-subtop">
+                <div class="cabinet__user-profession">
+                  <div class="select__wrapper">
+                    <select>
+                      <option value="1">Частный специалист</option>
+                      <option value="1" selected>Организация</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="help-form__submit">
-                  <button type="submit">
-                    Отправить
-                  </button>
-                </div>
-                <div class="help-form__criterion">
-                  Обратите внимание: Вы можете загрузить до 5 файлов. Поддерживаемые типы файлов jpg, jpeg, pdf
+                <div>
+                  На сайте с <span>01.01.2021</span>
                 </div>
               </div>
-            </form>
+              <div class="cabinet__user-descr">
+                <textarea>Kids Info — крупнейшая площадка объявлений России по данным gemiusAudience, июнь 2020. Использование ресурса Kidsinfo.ru означает согласие с Пользовательским соглашением и Политикой конфиденциальности. Kids Info — крупнейшая площадка объявлений России по данным gemiusAudience, июнь 2020. Использование ресурса Kidsinfo.ru означает согласие с Пользовательским соглашением и Политикой"</textarea>
+              </div>
+            </div>
+          </div>
+          <div class="cabinet-tabs tabs">
+            <ul class="settings__links">
+              <li class="active">
+                <a href="#!">Я продавец</a>
+              </li>
+              <li>
+                <a href="settings-pokupatel.html">Я покупатель</a>
+              </li>
+              <li>
+                <a href="settings-notif.html">Уведомления</a>
+              </li>
+            </ul>
+            <div class="cabinet-tabs__content">
+              <form action="#!">
+                <div class="tabs__content-info">
+                  <div class="cabinet__main-page">
+                    <label class="check__label">
+                      <input class="check__input" type="checkbox">
+                      <span class="check__box"></span>
+                      Это главная страница личного кабинета
+                    </label>
+                  </div>
+                  <div class="tc__info-left">
+                    <div class="tc__info-item">
+                      <h3 class="tc__info-item-title">
+                        Страна:
+                      </h3>
+                      <div class="tc__info-item-content">
+                        <div class="select__wrapper rightside__select-wrapper">
+                          <select>
+                            <option value="">Россия</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tc__info-item">
+                      <h3 class="tc__info-item-title">
+                        Регион:
+                      </h3>
+                      <div class="tc__info-item-content">
+                        <div class="select__wrapper rightside__select-wrapper">
+                          <select>
+                            <option value="">Московская область</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tc__info-item">
+                      <h3 class="tc__info-item-title">
+                        Город:
+                      </h3>
+                      <div class="tc__info-item-content">
+                        <div class="select__wrapper rightside__select-wrapper">
+                          <select>
+                            <option value="">Москва</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tc__info-item">
+                      <h3 class="tc__info-item-title">
+                        Адрес:
+                      </h3>
+                      <div class="tc__info-item-content">
+                        <input type="text" value="Пр. Ленина 12/5">
+                      </div>
+                    </div>
+                    <div class="tc__info-item">
+                      <h3 class="tc__info-item-title">
+                        Сайт:
+                      </h3>
+                      <div class="tc__info-item-content">
+                        <input type="text" value="qweqweqwe.com">
+                      </div>
+                    </div>
+                    <div class="tc__info-item">
+                      <h3 class="tc__info-item-title">
+                        Телефон:
+                      </h3>
+                      <div class="tc__info-item-content">
+                        <input type="tel" value="+7 495 285 17 10">
+                      </div>
+                    </div>
+                    <div class="tc__info-item">
+                      <h3 class="tc__info-item-title">
+                        Email:
+                      </h3>
+                      <div class="tc__info-item-content">
+                        <input type="email" value="victoria@admin.ru">
+                      </div>
+                    </div>
+                    <div class="tc__info-item">
+                      <h3 class="tc__info-item-title">
+                        Соц. сети:
+                      </h3>
+                      <ul class="social__list-settings">
+                        <li class="social__item-settings">
+                          <div class="social__link social--vk">
+                            Вконтакте
+                          </div>
+                          <input type="text" placeholder="Вставьте ссылку">
+                        </li>
+                        <li class="social__item-settings">
+                          <div class="social__link social--fb">
+                            Фейсбук
+                          </div>
+                          <input type="text" placeholder="Вставьте ссылку">
+                        </li>
+                        <li class="social__item-settings">
+                          <div class="social__link social--you">
+                            Ютуб
+                          </div>
+                          <input type="text" placeholder="Вставьте ссылку">
+                        </li>
+                        <li class="social__item-settings">
+                          <div class="social__link social--inst">
+                            Инстаграм
+                          </div>
+                          <input type="text" placeholder="Вставьте ссылку">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tc__info-right">
+                    <div class="tc__info-right-item">
+                      <h3 class="tc__info-right-title">
+                        Товары <span>(Можно выбрать несколько)</span> 
+                      </h3>
+                      <ul class="tc__info-right-tags">
+                        <li><a href="#!">Беременность</a></li>
+                        <li><a href="#!">Образование и развитие</a></li>
+                        <li><a href="#!">Парикмахерские и ателье</a></li>
+                        <li><a href="#!">Здоровье и лечение</a></li>
+                        <li><a href="#!">Финансовые услуги</a></li>
+                        <li><a href="#!">Беременность</a></li>
+                        <li><a href="#!">Образование и развитие</a></li>
+                        <li><a href="#!">Парикмахерские и ателье</a></li>
+                        <li><a href="#!">Здоровье и лечение</a></li>
+                        <li><a href="#!">Финансовые услуги</a></li>
+                      </ul>
+                    </div>
+                    <div class="tc__info-right-item">
+                      <h3 class="tc__info-right-title">
+                        Услуги <span>(Можно выбрать несколько)</span> 
+                      </h3>
+                      <ul class="tc__info-right-tags">
+                        <li><a href="#!">Беременность</a></li>
+                        <li><a href="#!">Образование и развитие</a></li>
+                        <li><a href="#!">Парикмахерские и ателье</a></li>
+                        <li><a href="#!">Здоровье и лечение</a></li>
+                        <li><a href="#!">Финансовые услуги</a></li>
+                        <li><a href="#!">Беременность</a></li>
+                        <li><a href="#!">Образование и развитие</a></li>
+                        <li><a href="#!">Парикмахерские и ателье</a></li>
+                        <li><a href="#!">Здоровье и лечение</a></li>
+                        <li><a href="#!">Финансовые услуги</a></li>
+                      </ul>
+                    </div>
+                    <div class="tc__info-right-item">
+                      <h3 class="tc__info-right-title">
+                        Категории клиентов
+                      </h3>
+                      <ul class="tc__info-right-tags">
+                        <li><a href="#!">0+</a></li>
+                        <li><a href="#!">1-3</a></li>
+                        <li><a href="#!">11-15</a></li>
+                        <li><a href="#!">11-15</a></li>
+                        <li><a href="#!">11-15</a></li>
+                      </ul>
+                    </div>
+                   
+                  </div>
+                  <div class="setting__save">
+                    <a href="#!">
+                      Сохранить изменения
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
         <div class="rightside rightside__mobile-offcanvas">
@@ -136,7 +336,7 @@
                 <li class="rightside__link">
                   <a href="#!">Безопасность</a>
                 </li>
-                <li class="rightside__link">
+                <li class="rightside__link active">
                   <a href="#!">Настройки</a>
                 </li>
               </ul>
@@ -158,7 +358,7 @@
                   <li class="rightside__link">
                     <a href="#!">Справочник</a>
                   </li>
-                  <li class="rightside__link active">
+                  <li class="rightside__link">
                     <a href="#!">Помощь</a>
                   </li>
                   <li class="rightside__link">
@@ -231,7 +431,7 @@
               <li>
                 <a href="#!">Правила</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="#!">Помощь</a>
               </li>
               <li>

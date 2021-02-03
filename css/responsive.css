@@ -62,7 +62,8 @@
   margin-left: 30px;
 }
 
-.tabs__links li a {
+.tabs__links li a,
+.settings__links li a {
   font-size: 14px;
   padding: 7px 20px;
 }
@@ -92,6 +93,11 @@
 @media (max-width: 1199px) {
   .product__item-tooltip {
     display: none;
+  }
+  .public__btns {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
@@ -439,26 +445,70 @@
     margin-right: 0;
     margin-bottom: 4px;
   }
-  .field__criterion {
+  .field__criterion,
+  .adt-criterion {
     padding-left: 15px;
     font-size: 12px;
     line-height: 14px;
 }
+.adt__input, .adt__textarea {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.adt__input input, .adt__textarea textarea {
+  max-width: none;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.adt__box {
+  margin-bottom: 20px;
+}
+
+.adt__select .select__wrapper {
+  width: 100%;
+}
+
  } /* 850 */
 
 
 @media (max-width: 800px) {
-  .tabs__links {
+  .tabs__links,
+  .settings__links {
     white-space: nowrap;
     overflow-x: scroll;
   }
 
-  .tabs__links li {
+  .tabs__links li,
+  .settings__links li {
     overflow: initial;
   }
   .cabinet__user-left {
     width: 180px;
   }
+  .public__size {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .public__size-item:not(:last-of-type) {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .public__btns {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .public__btns a {
+    width: 48%;
+    max-width: none;
+  }
+ 
+ 
 }
 
 
@@ -467,11 +517,7 @@
   .cabinet-buyer__info-column:not(:last-of-type) {
     margin-right: 0;
   }
-  .tabs__content-info {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
+
 
   .tc__info-right {
     width: 100%;
@@ -490,6 +536,11 @@
   .product__item-wrap--big .product__item-img img {
     width: 100%;
   }
+
+  .public__size-item .product__item-wrap--big .product__item-img img {
+    width: 52px;
+}
+
   .product__item-wrap--min {
     width: 50%;
   }
@@ -524,7 +575,7 @@
   }
   .cabinet-buyer__info-column {
     width: 100%;
-
+    max-width: none;
   }
 } /* 767 */
 
@@ -646,6 +697,30 @@
   padding: 15px;
 }
 
+.safe__row {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.safe__row-left {
+  width: 48%;
+  margin: 0;
+}
+
+.safe__row-center {
+  width: 48%;
+  text-align: right;
+}
+
+.safe__row-right {
+  width: 100%;
+  margin-top: 10px;
+}
+
 } /* 700 */
 
 @media (max-width: 600px) {
@@ -656,6 +731,30 @@
 }
 
 @media (max-width: 560px) {
+  .safe__wrapper {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .adt__submit button {
+    max-width: none;
+  }
+  .adt__photo {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+  }
+  .public__wrapper,
+  .adt__wrapper {
+    padding: 15px;
+  }
+  
+  .adt__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
   .help-form__add-file {
     width: 100%;
     margin-right: 0;
@@ -904,11 +1003,14 @@
 }
 
 .tabs__content-info,
-.tabs__content-reviews {
+.tabs__content-reviews,
+.cabinet-buyer {
   padding: 15px;
   font-size: 14px;
   line-height: 20px;
 }
+
+
 
 .tc__review-ball {
   margin-top: 10px;
@@ -937,9 +1039,6 @@
   margin-bottom: 10px;
 }
 
-.cabinet-buyer {
-  padding: 15px;
-}
 .cabinet__user-buyer .cabinet__user-name {
   width: 100%;
 }
@@ -969,6 +1068,21 @@
 .product__item-add {
   padding: 30px 15px;
 }
+.safe__row-left, 
+.safe__row-right,
+.safe__row-center {
+  width: 100%;
+  text-align: left;
+}
+
+.safe__row-center {
+  margin-top: 10px;
+}
+
+.safe__logout a {
+  max-width: none;
+}
+
 }
 
 @media (max-width: 460px) {
@@ -995,6 +1109,23 @@
     margin-bottom: 7px;
   }
  
+}
+
+@media (max-width: 420px) {
+  .public__btns {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  
+  .public__btns a {
+    width: 100%;
+  }
+
+  .public__btns a:first-of-type {
+    margin: 0;
+    margin-bottom: 15px;
+  }
 }
 
 
