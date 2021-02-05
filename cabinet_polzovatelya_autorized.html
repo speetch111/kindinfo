@@ -186,7 +186,7 @@
                         Сайт:
                       </h3>
                       <div class="tc__info-item-content">
-                       <a href="#!" target="_blanc">qweqweqwe.com</a>
+                       <a href="#!" target="_blank">qweqweqwe.com</a>
                       </div>
                     </div>
                     <div class="tc__info-item">
@@ -234,7 +234,7 @@
                     </div>
                     <div class="tc__info-left-footer">
                       <a class="tc__info-left-share" href="#!"><span>Поделиться</span></a>
-                      <a class="tc__info-left-complaint" href="#!"><span>Жалоба</span></a>
+                      <a class="tc__info-left-complaint open-popup" href="#!" data-popup="popup-report"><span>Жалоба</span></a>
                     </div>
                   </div>
                   <div class="tc__info-right">
@@ -1213,11 +1213,19 @@
                     <div class="tc__review-textarea">
                       <textarea placeholder="Оставьте отзыв"></textarea>
                     </div>
-                    <div class="tc__review-send">
-                      <button type="submit">
-                        Отправить
-                      </button>
+                    <div class="tc__review-footer">
+                      <div class="tc__review-add-file">
+                        <a href="#!">
+                          Прикрепить файл
+                        </a>
+                      </div>
+                      <div class="tc__review-send">
+                        <button type="submit">
+                          Отправить
+                        </button>
+                      </div>
                     </div>
+                  
                   </form>
                   <div class="tc__review-list">
                     <!-- Комментарий -->
@@ -1469,6 +1477,45 @@
           <div class="popup-sign-in__title">
             Необходимо войти на сайт
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- popup end -->
+ 
+  <!-- popup start -->
+  <div class="popup popup-report">
+    <div class="popup__wrapper">
+      <div class="popup__inner">
+        <div class="popup__content popup-report__content">
+          <button class="mobile__close-icon popup__close">
+            <span></span>
+            <span></span>
+          </button>
+          <form action="#!">
+          <div class="popup-report__title">
+            Сообщить о нарушении
+          </div>
+          <div class="popup-report__text">
+            <p>
+              Вы можете сообщить модератору о нарушении правил в данном материале. 
+            </p>
+            <p>
+              Пожалуйста, укажите причину, по которой вы хотите обратить внимание на данный материал.
+            </p>
+          </div>
+          <div class="popup-report__textarea">
+            <textarea placeholder="Причина жалобы"></textarea>
+          </div>
+          <div class="popup-report__footer">
+            <button class="popup-report__submit" type="submit">
+              Отправить
+            </button>
+            <button class="popup-report__cancel popup__close">
+              Отменить
+            </button>
+          </div>
+        </form>
         </div>
       </div>
     </div>

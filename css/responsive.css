@@ -54,10 +54,7 @@
   padding: 10px;
 }
 
-.product__item-title {
-  font-size: 16px;
-  line-height: 20px;
-}
+
 .header__user-login {
   margin-left: 30px;
 }
@@ -81,8 +78,7 @@
 
 @media (max-width: 1240px) {
   .product__item-status {
-    padding: 0 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .product__item-actions {
     width: 100%;
@@ -514,6 +510,11 @@
 
 
 @media (max-width: 767px) {
+  .adt-preview__wrap .product__item-wrap--big {
+    width: 100%;
+    height: auto;
+  }
+
   .cabinet-buyer__info-column:not(:last-of-type) {
     margin-right: 0;
   }
@@ -581,6 +582,23 @@
 
 
 @media (max-width: 700px) {
+  .adt-preview__link {
+    order: -1;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+.popup__close {
+  right: 0px;
+}
+
+.popup-report__content,
+.popup-share__content,
+.popup__content {
+  max-width: none;
+  width: 90%;
+  padding: 15px;
+}
+
   .header__user-name {
     display: none;
   }
@@ -731,6 +749,64 @@
 }
 
 @media (max-width: 560px) {
+  .adt__submit {
+    max-width: none;
+    margin: 0;
+  }
+  .product__item-title {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .product__item-text,
+  .product__item-footer {
+    font-size: 13px;
+  }
+  
+  
+  .public__sum span {display: block;}
+  .public__size-item--min {
+    max-width: none;
+  }
+  .public__size-item--min .product__item-wrap--min {
+    max-width: none;
+    width: 50%;
+  }
+
+  .tc__review-answer-form button {
+    width: 100%;
+  }
+  .tc__review-footer {
+    flex-wrap: wrap;
+  }
+
+  .tc__review-send,
+.tc__review-add-file {
+  width: 100%;
+} 
+
+.tc__review-send {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.tc__review-send button,
+.tc__review-add-file a {
+  max-width: none;
+  width: 100%;
+}
+
+  .popup-report__content {
+    padding: 15px;
+  }
+
+  .popup-report__title {
+    font-size: 18px;
+  }
+  .popup-report__textarea textarea {
+    padding: 10px;
+  }
+
   .safe__wrapper {
     padding: 15px;
     font-size: 14px;
@@ -862,9 +938,6 @@
   line-height: 26px;
 }
 
-.popup__close {
-  right: 0px;
-}
 
 .cabinet__user-top {
   margin-bottom: 15px;
@@ -1140,6 +1213,7 @@
     height: 33px;
     line-height: 33px;
   }
+
 }
 
 @media (max-width: 359px) {
