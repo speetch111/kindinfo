@@ -3440,6 +3440,11 @@ div.cabinet__user-profession {
   font-size: 15px;
 }
 
+.tag__list label:hover span {
+  background-color: var(--green-bg);
+  color: #ffffff;
+}
+
 
 
 .adt__checkbox label span {
