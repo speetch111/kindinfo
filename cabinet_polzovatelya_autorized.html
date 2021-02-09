@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <title>Кабинет пользователя для авторизованного пользователя</title>
   <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
-  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+   <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/datepicker.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -1215,9 +1216,12 @@
                     </div>
                     <div class="tc__review-footer">
                       <div class="tc__review-add-file">
-                        <a href="#!">
-                          Прикрепить файл
-                        </a>
+                        <div class="input-file__wrapper">
+                          <label class="input__file-button">
+                            <span class="input__file-button-text">Прикрепить файл</span>
+                          <input type="file" class="input input__file" multiple>
+                        </label>
+                       </div>
                       </div>
                       <div class="tc__review-send">
                         <button type="submit">
@@ -1498,10 +1502,10 @@
           </div>
           <div class="popup-report__text">
             <p>
-              Вы можете сообщить модератору о нарушении правил в данном материале. 
+              Вы можете сообщить Администрации сайта о нарушении Правил пользователем.
             </p>
             <p>
-              Пожалуйста, укажите причину, по которой вы хотите обратить внимание на данный материал.
+              Пожалуйста, укажите причину, по которой Вы хотите обратить внимание Администрации на данного пользователя.
             </p>
           </div>
           <div class="popup-report__textarea">
@@ -1576,6 +1580,7 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/datepicker.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

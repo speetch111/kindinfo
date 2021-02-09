@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <title>Личный кабинет</title>
   <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
-  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+   <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/datepicker.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -632,7 +633,21 @@
                         </div>
                         <form action="#!" class="tc__review-answer-form">
                           <textarea placeholder="">Текст ответа</textarea>
-                          <button type="submit">Отправить</button>
+                          <div class="tc__review-footer">
+                            <div class="tc__review-add-file">
+                              <div class="input-file__wrapper">
+                                <label class="input__file-button">
+                                  <span class="input__file-button-text">Прикрепить файл</span>
+                                <input type="file" class="input input__file" multiple>
+                              </label>
+                             </div>
+                            </div>
+                            <div class="tc__review-send">
+                              <button type="submit">
+                                Отправить
+                              </button>
+                            </div>
+                          </div>
                         </form>
                       </div>
                       <!-- Ответ -->
@@ -661,9 +676,12 @@
                             <textarea placeholder="">Текст ответа</textarea>
                             <div class="tc__review-footer">
                               <div class="tc__review-add-file">
-                                <a href="#!">
-                                  Прикрепить файл
-                                </a>
+                                <div class="input-file__wrapper">
+                                  <label class="input__file-button">
+                                    <span class="input__file-button-text">Прикрепить файл</span>
+                                  <input type="file" class="input input__file" multiple>
+                                </label>
+                               </div>
                               </div>
                               <div class="tc__review-send">
                                 <button type="submit">
@@ -1014,6 +1032,7 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/datepicker.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

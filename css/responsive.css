@@ -661,7 +661,8 @@
     width: 100%;
   }
 
-  .products__tags-offcanvas .tag__item a {
+  .products__tags-offcanvas .tag__item a,
+  .products__tags-offcanvas label span {
     width: 100%;
   }
 
@@ -752,6 +753,10 @@
 }
 
 @media (max-width: 560px) {
+  .input__file-button {
+    height: 38px;
+  }
+
   .adt__submit {
     max-width: none;
     margin: 0;
@@ -1209,10 +1214,12 @@
 
 @media (max-width: 400px) {
   .product__item-status {
-    bottom: 53px;
     width: -webkit-calc(100% - 20px);
     width: calc(100% - 20px);
     text-align: center;
+    line-height: 20px;
+    height: auto;
+    padding: 6.5px 0;
   }
   .product__item-wrap.product__item-wrap--actions .product__item-views{
     height: 33px;

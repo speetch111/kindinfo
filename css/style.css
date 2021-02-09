@@ -3391,7 +3391,8 @@ div.cabinet__user-profession {
 }
 
 .adt__radio input,
-.adt__checkbox input {
+.adt__checkbox input,
+.tag__list input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3412,7 +3413,8 @@ div.cabinet__user-profession {
 }
 
 .adt__radio label, 
-.adt__checkbox label {
+.adt__checkbox label,
+.tag__list label  {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3421,7 +3423,8 @@ div.cabinet__user-profession {
 }
 
 .adt__radio label span, 
-.adt__checkbox label span {
+.adt__checkbox label span,
+.tag__list label span  {
   padding: 7px 40px;
   background-color: #F0F0F0;
   -webkit-border-radius: 4px;
@@ -3429,6 +3432,12 @@ div.cabinet__user-profession {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+}
+
+.tag__list label span {
+  padding: 7px 20px;
+  background-color: #fff;
+  font-size: 15px;
 }
 
 
@@ -3439,7 +3448,8 @@ div.cabinet__user-profession {
 }
 
 .adt__checkbox label input:checked ~ span, 
-.adt__radio label input:checked ~ span { 
+.adt__radio label input:checked ~ span,
+.tag__list label input:checked ~ span  { 
   background-color: var(--green-bg);
   color: #fff;
 }
@@ -3740,3 +3750,68 @@ div.cabinet__user-profession {
 }
 
 
+.input-file__wrapper {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+ 
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+ 
+
+ 
+.input__file-button-text {
+  line-height: 1;
+  margin-top: 1px;
+  width: 100%;
+}
+ 
+.input__file-button {
+  display: block;
+  width: 100%;
+  height: 44px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #E5E5E5;
+  padding: 9px 45px;
+  color: #000000;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input__file-button.green {
+  background-color: var(--green-bg);
+  color: #fff;
+  padding: 9px;
+}
+
+.adt__photo .input-file__wrapper {
+  height: 100%;
+}
+.adt__photo .input__file-button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}

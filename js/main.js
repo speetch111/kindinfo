@@ -36,26 +36,11 @@ $(function () {
 
 $(function () {
 
-  $.datepicker.regional['ru'] = {
-    closeText: 'Закрыть',
-    prevText: 'Предыдущий',
-    nextText: 'Следующий',
-    currentText: 'Сегодня',
-    monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-    monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-    weekHeader: 'Не',
-    dateFormat: 'dd.mm.yy',
-    firstDay: 1,
-    isRTL: false,
-    showMonthAfterYear: false,
-    yearSuffix: ''
-  };
-  $.datepicker.setDefaults($.datepicker.regional['ru']);
-
-  $(".datepicker").datepicker();
+  $('.datepicker-here').datepicker({
+    // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
+    maxDate: new Date()
+  })
+  
 });
 
 $(function () {
@@ -90,9 +75,9 @@ $(function () {
     $(this).toggleClass('active');
   });
 
-  $('.products__tag-list li').click(function () {
-    $(this).addClass('active').siblings().removeClass('active');
-  });
+  // $('.products__tag-list li').click(function () {
+  //   $(this).addClass('active').siblings().removeClass('active');
+  // });
 
   $('.tc__info-right-tags li a').click(function () {
     $(this).parent().toggleClass('active');
@@ -224,8 +209,17 @@ $(function () {
   $('.public__size-item').click(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
+  
+  if ($(window).width() < 701) {
 
+    $('.tag__item').click(function () {
+      $('.products__tags-offcanvas').removeClass('opened');
+      $('body').removeClass('oh');
+    }); 
+  }
+  
 });
+
 
 
 
